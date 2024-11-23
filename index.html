@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's Your Parenting-Failure Style?</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="first-row">
+            <a href="#">Try 30 days free.</a>
+            <a href="#"><img src="images/logo.svg" alt="logo" />
+            <div class="first-row-links">
+                <a href="#">Newsletter</a>
+                <a href="#">Sign In</a>
+                <a href="#" class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="border"></div>
+        <nav class="second-row border-shadow">
+            <a href="#">The Latest</a>
+            <a href="#">News</a>
+            <a href="#">Books & Culture</a>
+            <a href="#">Fiction & Poetry</a>
+            <a href="#">Humor & Cartoons</a>
+            <a href="#">BMagazine</a>
+            <a href="#">Puzzles & Games</a>
+            <a href="#">Video</a>
+            <a href="#">Podcasts</a>
+            <a href="#">Goings On</a>
+            <a href="#">Shop</a>
+        </nav>
+        <div class="border"></div>
+    </header>
+    <main class="container">
+        <div class="info">
+            <h1 class="title">What's Your Parenting-Failure Style?</h1>
+            <p class="author">By Kira Garcia</p>
+            <p>November 11, 2024</p>
+        </div>
+        <div class="border"></div>
+        <div class="article">
+            <div>
+                <img src="images/articleImage.jpg" alt="article image" class="image-styles"/>
+                <p>Illustration by Luci Gutiérrez</p>
+            </div>
+            <div>
+                <p class="text"> <span class="drop-cap">W</span>hether you’re horrifying your teen with nauseating sex-ed analogies or watching TikToks while your toddler eats a bagel from the subway floor, face it: you’re flailing in the vast chasm of your child’s relentless needs. Why not get comfortable with your ineptitude? Discover your unique parenting-failure style with this fun quiz:</p>
+                <p class="text"><span class="number">1.</span> Your eight-year-old has been watching chainsaw demonstrations on YouTube lately. You wake up one morning to a loud buzzing from the back yard, followed by a crash. Do you:</p>
+                <p class="text">(a) Put an extra frozen waffle in the toaster—sounds like she’s working up an appetite.</p>
+                <p class="text">(b) Performatively yell at her so that the neighbors can hear, but then, in private, praise her—those landscaping skills will pay for college.</p>
+                <p class="text">(c) Chuckle into your cannabis-infused morning smoothie and turn up the volume on “The Secret Lives of Mormon Wives.”</p>
+                <p class="text"><span class="number">2.</span> You’re about to board a six-hour flight home from a family vacation, and your five-year-old, who just ate twelve very ripe plums, says his tummy hurts. Do you:</p>
+                <p class="text">(a) Tape the lower half of his body into a duty-free bag and hope for the best.</p>
+                <p class="text">(b) Take a business-class upgrade—the last one available—and wish your spouse good luck.</p>
+                <p class="text">(c) Say, “What’s your name, young man? You’re a little young to be travelling alone!,” so that everyone can hear.</p>
+                <p class="text"><span class="number">3.</span> Your mother-in-law took your fourteen-year-old to see a foreign film. Over lunch at Olive Garden afterward, he wonders aloud about a specific sexual practice that a character in the movie refers to. Do you:</p>
+                <p class="text">(a) Tell him to ask the server about it.</p>
+                <p class="text">(b) Describe it, using breadsticks and onion rings as visual aids.</p>
+                <p class="text">(c) Put on a Chappell Roan playlist and hope he figures it out.</p>
+                <p class="text"><span class="number">4.</span> Your sixth grader is doing makeup tutorials on Instagram that include shoplifting tips and savage descriptions of her science teacher’s appearance. Do you:</p>
+                <p class="text">(a) Tell her to try harder next time—she didn’t even mention Mr. Welch’s hideous breath.</p>
+                <p class="text">(b) Monetize her platform—you’ll need cash for bail one day.</p>
+                <p class="text">(c) Explain that her glow definitely doesn’t come from within, and her frosted blush isn’t doing her any favors.</p>
+                <p class="text"><span class="number">5.</span> Your adult child is pregnant with her guru’s baby and asks to borrow ten thousand dollars so the two of them can start a colonic-hydrotherapy center together. Do you:</p>
+                <p class="text">(a) Refuse—she’s been rejecting your guru’s advances for years, so this just feels rude.</p>
+                <p class="text">(b) Explain that your long-distance fiancé, Stanislav, has all your money tied up in a bitcoin mine.</p>
+                <p class="text">(c) Tell her you’ll send twenty thousand if she gives you the placenta to use in a facial.</p>
+            </div>
+        </div>
+    </main>
+    <div id="paywall" class="paywall-overlay">
+        <div class="paywall-content">
+            <h2>Get Digital Access</h2>
+            <p>Subscribe now to access the full article.</p>
+            <button class="subscribe-button">Subscribe for $5/month</button>
+            <button id="closePaywall" class="close-button" aria-label="Close paywall popup">&times;</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var paywall = document.getElementById('paywall');
+            var closeButton = document.getElementById('closePaywall');
+            
+            setTimeout(function() {
+                paywall.style.display = 'flex';
+            }, 2000);
+            
+            closeButton.addEventListener('click', function() {
+                paywall.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
